@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/adventofcode/static/css/main.1c46b370.chunk.css",
+    "main.js": "/adventofcode/static/js/main.732f15b9.chunk.js",
+    "main.js.map": "/adventofcode/static/js/main.732f15b9.chunk.js.map",
+    "runtime-main.js": "/adventofcode/static/js/runtime-main.3468dbea.js",
+    "runtime-main.js.map": "/adventofcode/static/js/runtime-main.3468dbea.js.map",
+    "static/js/2.8c7c9876.chunk.js": "/adventofcode/static/js/2.8c7c9876.chunk.js",
+    "static/js/2.8c7c9876.chunk.js.map": "/adventofcode/static/js/2.8c7c9876.chunk.js.map",
+    "index.html": "/adventofcode/index.html",
+    "static/css/main.1c46b370.chunk.css.map": "/adventofcode/static/css/main.1c46b370.chunk.css.map",
+    "static/js/2.8c7c9876.chunk.js.LICENSE.txt": "/adventofcode/static/js/2.8c7c9876.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3468dbea.js",
+    "static/js/2.8c7c9876.chunk.js",
+    "static/css/main.1c46b370.chunk.css",
+    "static/js/main.732f15b9.chunk.js"
+  ]
+}
