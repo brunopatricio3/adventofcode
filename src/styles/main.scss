@@ -37,8 +37,18 @@ h1{
   text-shadow: 0 0 2px $cl-main-header, 0 0 5px $cl-main-header;
 }
 
+h2{
+  text-decoration: none;
+  color: $cl-main-header;
+}
+
 p{
   color: $cl-text;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 span{
