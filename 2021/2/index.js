@@ -31,8 +31,6 @@ let finalHorizontalPosition = 0;
 let finalDepth= 0;
 
 for(let j=0; j< input.length; j++){
-    let splitArray = input[j].split(' ');
-
     switch(splitArray[0]){
         case "forward": 
             finalHorizontalPosition += Number(splitArray[1]); 
