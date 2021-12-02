@@ -33,10 +33,8 @@ let finalDepth= 0;
 for(let j=0; j< input.length; j++){
     switch(splitArray[0]){
         case "forward": 
-            finalHorizontalPosition += Number(splitArray[1]); 
-            if(aim !== 0){
-                finalDepth += (aim * Number(splitArray[1]))
-            }
+            finalHorizontalPosition += Number(splitArray[1]);
+            finalDepth += (aim * Number(splitArray[1]));
             break;
         case "up": aim -= Number(splitArray[1]); break;
         case "down": aim += Number(splitArray[1]); break;
