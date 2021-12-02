@@ -32,6 +32,41 @@
   color: $cl-title-hover;
 }
 
+.link{
+  color: $cl-title;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover{
+  color: $cl-title-hover;
+}
+
+.title{
+  color: $cl-title;
+}
+
+.text{
+  color: $cl-text;
+}
+
+.award-gold{
+  color: $cl-gold;
+}
+
+.award-silver{
+  color: $cl-silver;
+}
+
+.text-highlight{
+  text-shadow: 0 0 5px #ffffff;
+}
+
+body{
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+}
+
 h1{
   text-decoration: none;
   color: $cl-main-header;
@@ -56,21 +91,6 @@ span{
   color: $cl-text;
 }
 
-.title{
-  color: $cl-title;
-}
-
-.text{
-  color: $cl-text;
-}
-
-.award-gold{
-  color: $cl-gold;
-}
-
-.award-silver{
-  color: $cl-silver;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

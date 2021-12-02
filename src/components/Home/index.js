@@ -5,13 +5,13 @@ function Home() {
     <>
       <div>
         <p>
-          This website was inspired by the original <a>Advent of code</a> by Eric Wastl. It's main purpose is to index the various solutions for the various challenges of the 2021 Advent of Code's calendar.  
+          This website was inspired by the original <a target="_blank" href="https://adventofcode.com/" className="link">Advent of code</a> website, created by  <a target="_blank" href="https://adventofcode.com/2021/about" className="link">Eric Wastl</a>. It's main purpose is to index the various solutions for the various challenges of the 2021 Advent of Code's calendar.  
         </p>
         <p>
-          The reason the website was structured similar to Eric's Advent of Code, was to maintain the consistency, aspect and spirit of the original and it's in no way an attempt to steal his amazing work done over the years.  
+          The reason this website was structured and stylized similar to Eric's Advent of Code webiste, was to maintain the consistency, aspect and spirit of the original and, it is, in no way, an attempt to steal his <span className="text-highlight">incredible work</span> done over the past years.  
         </p>
         <p>
-          Below you can find this year's calendar and respective solutions in Javascript:  
+          Below, you can find this year's calendar and respective solutions in Javascript:  
         </p>
       </div>
       <div className="calendar">
