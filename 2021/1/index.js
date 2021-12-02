@@ -20,6 +20,7 @@ for(let i=0; i< numberArray.length; i++){
 console.log("Number of increases:",numberIncreases);
 
 //Part 2
+
 let numberSumIncreases = 0;
 
 for(let j=0; j< numberArray.length; j++){
