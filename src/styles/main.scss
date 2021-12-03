@@ -27,6 +27,7 @@
   margin: 0px 5px;
   text-decoration: none;
   cursor: pointer;
+  transition: .5s;
 }
 
 .nav-item:hover{
@@ -37,6 +38,7 @@
   color: $cl-title;
   text-decoration: none;
   cursor: pointer;
+  transition: .5s;
 }
 
 .link:hover{
@@ -59,9 +61,48 @@
   color: $cl-silver;
 }
 
-.text-highlight{
-  text-shadow: 0 0 5px #ffffff;
+.text-highlight-white{
+  color: $cl-text;
+  text-shadow: 0 0 5px $cl-text;
 }
+
+.text-highlight-yellow{
+  color: $cl-gold;
+  text-shadow: 0 0 5px $cl-gold;
+}
+
+.chart-wrapper{
+  display: flex;
+  border: solid 1px $cl-title;
+  box-shadow: 0 0 10px $cl-title;
+  transition: .5s;
+  align-content: center;
+  align-items: center;
+}
+
+.a{
+  background-color: $color-brown;
+}
+
+.chart-wrapper:hover{
+  border: solid 1px $cl-title-hover;
+  box-shadow: 0 0 10px $cl-title-hover;
+}
+
+.chart-division, .info-division{
+  padding: 1rem;
+  width: 50%;
+  text-align: left;
+}
+
+.calendar-days{
+  transition: transform .5s
+}
+
+.calendar-days:hover{
+  transform: scale(1.1);
+}
+
 
 body{
   font-family: "Source Code Pro", monospace;
