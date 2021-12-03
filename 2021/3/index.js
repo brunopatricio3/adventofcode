@@ -12,11 +12,9 @@ let powerConsumption;
 
 for(let i=0; i< searchSize; i++){
     let zeros = 0, ones = 0;
-
     for(let j=0; j< input.length; j++){
         input[j].charAt(i) === "0" ? zeros++ : ones++;  
     }
-
     zeros > ones ? gammaRate += "0" : gammaRate += "1";
     zeros < ones ? epsilonRate += "0" : epsilonRate += "1";    
 }
