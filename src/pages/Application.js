@@ -6,7 +6,7 @@ import '../styles/main.scss';
 
 
 function Application() {
-  const [selectedPage, setSelectedPage] = useState("Tales");
+  const [selectedPage, setSelectedPage] = useState("Home");
 
   return (
     <div className="appWrapper">
