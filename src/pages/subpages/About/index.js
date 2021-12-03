@@ -1,9 +1,9 @@
-import '../../styles/main.scss';
+import '../../../styles/main.scss';
 
 function About() {
   return (
     <>
-      <div>
+      <div className="section-about">
           <p>This is the about section</p>
       </div>
     </>
