@@ -22,6 +22,9 @@ function Home() {
         <p>
           <span><a target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/2/index.js">Day 2) Dive!</a></span> <span className="award-gold">**</span>
         </p>
+        <p>
+          <span><a target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/3/index.js">Day 3) Binary Diagnostic</a></span> <span className="award-gold">**</span>
+        </p>
       </div>
     </>
   );
