@@ -1,5 +1,6 @@
 import '../../../styles/main.scss';
 import { BarChart } from '../../../components/Charts/BarChart';
+import { LineChart } from '../../../components/Charts/LineChart';
 
 function Tales() {
   return (
@@ -28,7 +29,7 @@ function Tales() {
             <p>The expedition just begun, and the submarine is away to look for the sleigh keys! <span className="text-highlight-white">What kind of challenges</span> will the depths of the ocean have in store for our little submarine? </p>
           </div>
           <div className="chart-division">
-           
+            <LineChart/>
           </div>
         </div>
       </div>

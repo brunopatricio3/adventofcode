@@ -26,7 +26,7 @@ function Application() {
           selectedPage === "About" ?
           <About /> : 
           <div></div>
-        }
+        } 
       </div>
     </div>
   );

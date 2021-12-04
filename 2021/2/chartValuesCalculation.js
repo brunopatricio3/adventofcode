@@ -7,7 +7,8 @@ let input = fs.readFileSync("input.txt").toString().split("\r\n");
 
 let x = 0;
 let y = 0;
-let movementArray = [];
+let xArray = [];
+let yArray = [];
 
 for(let i=0; i< input.length; i++){
     let splitArray = input[i].split(' ');
@@ -17,7 +18,11 @@ for(let i=0; i< input.length; i++){
         case "up": y -= Number(splitArray[1]); break;
         case "down": y += Number(splitArray[1]); break;
     }
-    movementArray.push({ x, y });
+    xArray.push("H. position: " + x);
+    yArray.push(y);
 }
 
-console.log(movementArray)
+
+
+const util = require('util')
+console.log(util.inspect(xArray, { maxArrayLength: null }))
