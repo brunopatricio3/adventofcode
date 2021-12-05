@@ -1,6 +1,10 @@
 @import "colors";
 @import "structure";
 
+$breakpoint-desktop: 1023px;
+$breakpoint-tablet: 767px;
+$breakpoint-mobile: 449px;
+
 .appWrapper{
   display: flex;
   justify-content: center;
@@ -134,10 +138,12 @@ span{
   color: $cl-text;
 }
 
+@media (max-width: $breakpoint-tablet) {
+  .chart-division {
+    display: none;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .info-division{
+    width: 100%;
   }
 }
-

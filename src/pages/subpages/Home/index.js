@@ -25,6 +25,12 @@ function Home() {
         <p>
           <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/3/index.js"><span>Day 3) Binary Diagnostic</span> <span className="award-gold">**</span></a>
         </p>
+        <p>
+          <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/4/index.js"><span>Day 4) Giant Squid</span> <span className="award-gold">**</span></a>
+        </p>
+        {/* <p>
+          <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/5/index.js"><span>Day 5) Hydrothermal Venture</span></a>
+        </p> */}
       </div>
     </>
   );
