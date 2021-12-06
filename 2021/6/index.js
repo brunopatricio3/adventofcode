@@ -1,30 +1,31 @@
 // Advent of Code - 2021 Challenge 
 // Day 5: Lanternfish
 
-//Part 1
-
 const fs = require("fs");
 let input = fs.readFileSync("input.txt").toString().split(",").map(Number);
 
-const DAYS_BEFORE_BIRTH = 6;
-const NEWFISH_DAYS_BEFORE_BIRTH = 8;
+function getNumberFishes(nrDays){
+    let totalFishes = 0;
+    let schoolFishesArray = [0,0,0,0,0,0,0,0,0];
 
-let fishArray = input;
-let numberOfDays = 80;
+    //Create initial state
+    for(let i = 0 ; i < input.length ; i++){
+        schoolFishesArray[input[i]]++;
+    } 
 
-for(let i=0; i < numberOfDays; i++){
-    for(let j=0 ; j< fishArray.length ; j++){
-        
-        fishArray[j]--;
+    for(let i = 0 ; i < nrDays ; i++){       
+        positionZero = schoolFishesArray.shift();
+        schoolFishesArray[8] = positionZero;
+        schoolFishesArray[6] = schoolFishesArray[6] + positionZero;
+    } 
     
-        if(fishArray[j] < 0){
-            fishArray[j] = DAYS_BEFORE_BIRTH;
-            fishArray.push(NEWFISH_DAYS_BEFORE_BIRTH+1);
-        }
+    for(let i = 0 ; i < schoolFishesArray.length ; i++){
+        totalFishes += schoolFishesArray[i];
     }
+
+    return "Number of lanternfish after " + nrDays + " days: " +  totalFishes;
 }
 
-console.log("Number of lanternfish after 80 days", fishArray.length )
-
-
+console.log(getNumberFishes(80));
+console.log(getNumberFishes(256));
 
