@@ -28,4 +28,3 @@ function getNumberFishes(nrDays){
 
 console.log(getNumberFishes(80));
 console.log(getNumberFishes(256));
-
