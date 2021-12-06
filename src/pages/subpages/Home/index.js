@@ -5,7 +5,7 @@ function Home() {
     <>
       <div className="section-home">
         <p>
-          This website was inspired by the original <a target="_blank" href="https://adventofcode.com/" className="link">Advent of code</a> website, created by  <a target="_blank" href="https://adventofcode.com/2021/about" className="link">Eric Wastl</a>. It's main purpose is to index the solutions for the various challenges of the 2021 Advent of Code's calendar.  
+          This website was inspired by the original <a target="_blank" rel="noreferrer" href="https://adventofcode.com/" className="link">Advent of code</a> website, created by  <a target="_blank" rel="noreferrer" href="https://adventofcode.com/2021/about" className="link">Eric Wastl</a>. It's main purpose is to index the solutions for the various challenges of the 2021 Advent of Code's calendar.  
         </p>
         <p>
           The reason this website was structured and stylized similar to Eric's Advent of Code webiste, was to maintain the consistency, aspect and spirit of the original and, it is, in no way, an attempt to steal his <span className="text-highlight-white">incredible work</span> done over the past years.  
@@ -17,20 +17,23 @@ function Home() {
       <div className="calendar">
         <h2>Calendar</h2>
         <p>
-          <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/1/index.js"><span>Day 1) Sonar Sweep</span> <span className="award-gold">**</span></a>
+          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/1/index.js"><span>Day 1) Sonar Sweep</span> <span className="award-gold">**</span></a>
         </p>
         <p>
-          <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/2/index.js"><span>Day 2) Dive!</span> <span className="award-gold">**</span></a>
+          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/2/index.js"><span>Day 2) Dive!</span> <span className="award-gold">**</span></a>
         </p>
         <p>
-          <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/3/index.js"><span>Day 3) Binary Diagnostic</span> <span className="award-gold">**</span></a>
+          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/3/index.js"><span>Day 3) Binary Diagnostic</span> <span className="award-gold">**</span></a>
         </p>
         <p>
-          <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/4/index.js"><span>Day 4) Giant Squid</span> <span className="award-gold">**</span></a>
+          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/4/index.js"><span>Day 4) Giant Squid</span> <span className="award-gold">**</span></a>
         </p>
-        {/* <p>
-          <a className="calendar-days" target="_blank" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/5/index.js"><span>Day 5) Hydrothermal Venture</span></a>
-        </p> */}
+        <p>
+         <span className="text-noncomplete">Day 5) Hydrothermal Venture</span>
+        </p>
+        <p>
+          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/6/index.js"><span>Day 6) Lanternfish</span> <span className="award-gold">**</span></a>
+        </p>
       </div>
     </>
   );

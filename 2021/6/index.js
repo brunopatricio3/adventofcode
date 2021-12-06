@@ -1,5 +1,5 @@
 // Advent of Code - 2021 Challenge 
-// Day 5: Lanternfish
+// Day 6: Lanternfish
 
 const fs = require("fs");
 let input = fs.readFileSync("input.txt").toString().split(",").map(Number);
@@ -7,7 +7,8 @@ let input = fs.readFileSync("input.txt").toString().split(",").map(Number);
 function getNumberFishes(nrDays){
     let totalFishes = 0;
     let schoolFishesArray = [0,0,0,0,0,0,0,0,0];
-
+    let positionZero;
+    
     //Create initial state
     for(let i = 0 ; i < input.length ; i++){
         schoolFishesArray[input[i]]++;

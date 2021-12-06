@@ -5,18 +5,50 @@ $breakpoint-desktop: 1023px;
 $breakpoint-tablet: 767px;
 $breakpoint-mobile: 449px;
 
+html, body{
+  height: 100%;
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  margin: 0;
+  background-color: $cl-background;
+
+}
+
+h1{
+  text-decoration: none;
+  color: $cl-main-header;
+  text-shadow: 0 0 2px $cl-main-header, 0 0 5px $cl-main-header;
+}
+
+h2{
+  text-decoration: none;
+  color: $cl-main-header;
+}
+
+p{
+  color: $cl-text;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+span{
+  color: $cl-text;
+}
+
 .appWrapper{
   display: flex;
   justify-content: center;
-  background-color: $cl-background;
   
 }
 
 .mainWrapper {
   display: flex;
+  height: 100%;
   text-align: center;
   width: 75rem;
-  min-height: 100vh;
   background-color: $cl-background;
   flex-direction: column;
   margin: 2rem;
@@ -57,12 +89,8 @@ $breakpoint-mobile: 449px;
   color: $cl-text;
 }
 
-.award-gold{
-  color: $cl-gold;
-}
-
-.award-silver{
-  color: $cl-silver;
+.text-noncomplete{
+  color: $color-brown;
 }
 
 .text-highlight-white{
@@ -73,6 +101,14 @@ $breakpoint-mobile: 449px;
 .text-highlight-yellow{
   color: $cl-gold;
   text-shadow: 0 0 5px $cl-gold;
+}
+
+.award-gold{
+  color: $cl-gold;
+}
+
+.award-silver{
+  color: $cl-silver;
 }
 
 .chart-wrapper{
@@ -106,36 +142,6 @@ $breakpoint-mobile: 449px;
 
 .calendar-days:hover{
   transform: scale(1.1);
-}
-
-body{
-  font-family: "Source Code Pro", monospace;
-  font-size: 14px;
-  margin: 0;
-}
-
-h1{
-  text-decoration: none;
-  color: $cl-main-header;
-  text-shadow: 0 0 2px $cl-main-header, 0 0 5px $cl-main-header;
-}
-
-h2{
-  text-decoration: none;
-  color: $cl-main-header;
-}
-
-p{
-  color: $cl-text;
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
-span{
-  color: $cl-text;
 }
 
 @media (max-width: $breakpoint-tablet) {

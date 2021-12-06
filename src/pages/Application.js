@@ -13,10 +13,10 @@ function Application() {
       <div className="mainWrapper">
         <h1>Advent of Code - 2021 Challenge</h1>
         <div className="nav margin-bottom-m">
-          <a onClick={()=> setSelectedPage("Home")} className="nav-item">[Home]</a>
-          <a onClick={()=> setSelectedPage("Tales")} className="nav-item">[Submarine Adventure]</a>
+          <span onClick={()=> setSelectedPage("Home")} className="nav-item">[Home]</span>
+          <span onClick={()=> setSelectedPage("Tales")} className="nav-item">[Submarine Adventure]</span>
           {/* <a onClick={()=> setSelectedPage("About")} className="nav-item">[About]</a> */}
-          <a target="_blank" href="https://adventofcode.com/" className="nav-item">[Visit Advent of Code]</a>
+          <a target="_blank" rel="noreferrer" href="https://adventofcode.com/" className="nav-item">[Visit Advent of Code]</a>
         </div>
         {
           selectedPage === "Home" ?
