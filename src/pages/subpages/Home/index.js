@@ -34,6 +34,9 @@ function Home() {
         <p>
           <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/6/index.js"><span>Day 6) Lanternfish</span> <span className="award-gold">**</span></a>
         </p>
+        <p>
+          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/7/index.js"><span>Day 7) The Treachery of Whales</span> <span className="award-gold">**</span></a>
+        </p>
       </div>
     </>
   );
