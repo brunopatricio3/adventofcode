@@ -11,52 +11,30 @@ let signalPatters = [];
 let outputValues = [];
 
 for(let i=0; i< input.length ; i++){
-    signalPatters.push(input[i].split(" | ")[0].split(" "))
-    outputValues.push(input[i].split(" | ")[1].split(" "))
-}
-
-function auxCheckForLetters(string, substring) {
-    var letters = [...string];
-    // console.log(letters)
-    return [...substring].every(x => {
-        var index = letters.indexOf(x);
-        if (~index) {
-            letters.splice(index, 1);
-            return true;
-        }
-    });
+    signalPatters.push(input[i].split(" | ")[0].split(" "));
+    outputValues.push(input[i].split(" | ")[1].split(" "));
 }
 
 function analyseOutput(){
     const oneCode="cf";
-    const threeCode="acdfg";
+    const fourCode="bcdf";
     const sevenCode="acf";
     const eightCode="abcdefg";
-    let arrayNumbers=[oneCode,threeCode,sevenCode,eightCode];
-    let n=0;
-
     
-    for(let i = 0 ; i < signalPatters.length ; i++){
+    let arrayNumbers=[oneCode,fourCode,sevenCode,eightCode];
+    let numberOfCodesInOutput=0;
+
+    for(let i = 0 ; i < arrayNumbers.length ; i++){
         for(let j = 0 ; j < outputValues.length ; j++){
-            for(let k = 0 ; k < outputValues[i].length ; k++){
-                console.log("o",outputValues[j][k])
-                console.log("i",signalPatters[i][j])
-                console.log(auxCheckForLetters(outputValues[j][k], signalPatters[i][j]));
-                if(auxCheckForLetters(outputValues[j][k], signalPatters[i][i])){
-                    n++
-                };
+            for(let k = 0 ; k < outputValues[j].length ; k++){
+                if(arrayNumbers[i].length === outputValues[j][k].length){
+                    numberOfCodesInOutput++;
+                }
             }
+        
         }
     }
-    return n;
+    return numberOfCodesInOutput;
 }
 
-// console.log("io", auxCheckForLetters(outputValues[0][i], signalPatters[0][j]))
-
-console.log("n",analyseOutput())
-
-// console.log(input)
-// console.log(signalPatters)
-// console.log(outputValues)
-// console.log(signalPatters)
-// console.log(outputValues)
+console.log("Number of codes in output: ",analyseOutput());
