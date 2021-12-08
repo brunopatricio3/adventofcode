@@ -37,4 +37,4 @@ function analyseOutput(){
     return numberOfCodesInOutput;
 }
 
-console.log("Number of codes in output: ",analyseOutput());
+console.log("Number of codes in output: ", analyseOutput());
