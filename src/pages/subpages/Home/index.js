@@ -40,6 +40,15 @@ function Home() {
         <p>
           <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/8/index.js"><span>Day 8) Seven Segment Search</span> <span className="award-silver">*</span></a>
         </p>
+        <p>
+        <span className="text-noncomplete">Day 9) Smoke Basin</span>
+        </p>
+        <p>
+        <span className="text-noncomplete">Day 10) Syntax Scoring</span> 
+        </p>
+        <p>
+        <span className="text-noncomplete">Day 11) Dumbo Octopus</span>
+        </p>
       </div>
     </>
   );
