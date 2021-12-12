@@ -1,6 +1,8 @@
 import '../../../styles/main.scss';
+import {days} from "./days.js";
 
 function Home() {
+  console.log(days)
   return (
     <>
       <div className="section-home">
@@ -16,39 +18,20 @@ function Home() {
       </div>
       <div className="calendar">
         <h2>Calendar</h2>
-        <p>
-          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/1/index.js"><span>Day 1) Sonar Sweep</span> <span className="award-gold">**</span></a>
-        </p>
-        <p>
-          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/2/index.js"><span>Day 2) Dive!</span> <span className="award-gold">**</span></a>
-        </p>
-        <p>
-          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/3/index.js"><span>Day 3) Binary Diagnostic</span> <span className="award-gold">**</span></a>
-        </p>
-        <p>
-          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/4/index.js"><span>Day 4) Giant Squid</span> <span className="award-gold">**</span></a>
-        </p>
-        <p>
-         <span className="text-noncomplete">Day 5) Hydrothermal Venture</span>
-        </p>
-        <p>
-          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/6/index.js"><span>Day 6) Lanternfish</span> <span className="award-gold">**</span></a>
-        </p>
-        <p>
-          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/7/index.js"><span>Day 7) The Treachery of Whales</span> <span className="award-gold">**</span></a>
-        </p>
-        <p>
-          <a className="calendar-days" target="_blank" rel="noreferrer" href="https://github.com/brunopatricio3/adventofcode/blob/main/2021/8/index.js"><span>Day 8) Seven Segment Search</span> <span className="award-silver">*</span></a>
-        </p>
-        <p>
-        <span className="text-noncomplete">Day 9) Smoke Basin</span>
-        </p>
-        <p>
-        <span className="text-noncomplete">Day 10) Syntax Scoring</span> 
-        </p>
-        <p>
-        <span className="text-noncomplete">Day 11) Dumbo Octopus</span>
-        </p>
+        {
+          days.map((day, i) => 
+          <p key={i}>   
+            {day.completed === 2 ? (
+              <><a className="calendar-days" target="_blank" rel="noreferrer" href={day.link}><span>{day.text}</span></a> <span className="award-gold">**</span></>
+            ) :
+            day.completed === 1 ? (
+              <><a className="calendar-days" target="_blank" rel="noreferrer" href={day.link}><span>{day.text}</span></a> <span className="award-silver">*</span></>
+            ) : (
+              <span className="text-noncomplete">{day.text}</span>
+            )}
+          </p>  
+          )
+        }
       </div>
     </>
   );
